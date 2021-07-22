@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { SingleUpload, MultiUpload } from './Upload';
+import { Uploadfile, Uploadfiles } from './Upload';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,10 +12,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <div>
-        <p>Single upload:  <SingleUpload /></p>
+        <p>Single upload:  <Uploadfile /></p>
       </div>
       <div>
-        <p>Multiple upload: <MultiUpload /></p>
+        <p>Multiple upload: <Uploadfiles /></p>
       </div>
     </div>
   )

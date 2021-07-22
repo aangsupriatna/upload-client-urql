@@ -26,7 +26,7 @@ const multiUploadMutation = gql`
   }
 `;
 
-export const SingleUpload = () => {
+export const Uploadfile = () => {
   const [res, mutate] = useMutation(singleUploadMutation);
   const handleChange = React.useCallback(
     ({ target: { validity, files: [file], } }) => {
@@ -38,7 +38,7 @@ export const SingleUpload = () => {
   return <input type="file" required onChange={handleChange} />;
 };
 
-export const MultiUpload = () => {
+export const Uploadfiles = () => {
   const [res, mutate] = useMutation(multiUploadMutation);
   const handleChange = React.useCallback(
     ({ target: { validity, files } }) => {
